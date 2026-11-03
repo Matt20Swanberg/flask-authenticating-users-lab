@@ -1,4 +1,4 @@
-# Flask User Authentication Lab
+# Lab: Authenticating Users
 
 ## Overview
 
