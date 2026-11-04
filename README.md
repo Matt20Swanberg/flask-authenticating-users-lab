@@ -81,17 +81,6 @@ session.pop('user_id', None)
 
 This prevents subsequent requests from identifying the user as authenticated.
 
-## Authentication vs. Authorization
-
-Although related, authentication and authorization serve different purposes.
-
-**Authentication** determines who a user is.
-
-In this lab, authentication occurs when the application retrieves a user by username and stores their ID in the Flask session.
-
-**Authorization** determines whether a user has permission to access a particular resource.
-
-While this assignment focuses primarily on authentication, the session information established here can later be used to protect resources that require a logged-in user.
 
 ## Project Setup
 
@@ -377,7 +366,7 @@ The application can also be tested through the React frontend.
 
 The following screenshot demonstrates the automated test results for the authentication functionality.
 
-![Automated Test Suite Results](screenshot/test_suite.png)
+![Test Suite Results](screenshot/test_suite.png)
 
 ## Code Structure and Design
 
@@ -481,19 +470,6 @@ In a production environment, additional security measures would be necessary, in
 - CSRF protection where appropriate.
 - Secure management of application secrets.
 
-## Potential Future Improvements
-
-The application could be expanded with:
-
-- Password-based authentication.
-- User registration functionality.
-- Additional request validation.
-- Protected endpoints requiring authentication.
-- Role-based authorization.
-- Automated tests for invalid usernames.
-- Session expiration handling.
-- Additional frontend error handling.
-- Reusable authentication helpers.
 
 ## Conclusion
 
@@ -505,12 +481,6 @@ The project reinforces important backend development concepts, including RESTful
 
 It also establishes a foundation for implementing authorization and protecting application resources in future projects.
 
-
-## Screenshot
-
-### Test Suite Results
-
-![Pytest Results](screenshot/test_suite.png)
 
 ## Author
 
